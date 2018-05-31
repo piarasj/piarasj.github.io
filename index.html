@@ -18,6 +18,12 @@ var map = new mapboxgl.Map({
   zoom: 14
 });
 
+map.addSource('some id', {
+  type: 'geojson',
+  data: 'https://github.com/piarasj/piarasj.github.io/blob/master/sweetgreen.geojson'
+});
+
+
 var stores = {
   // data from sweetgreen.geojson, downloaded above
 };
