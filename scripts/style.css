@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-
 body {
   background: #404040;
   color: #f8f8f8;
@@ -14,4 +13,20 @@ body {
 gets 2/3 of the page. You can adjust this to your personal liking. */
 .sidebar {
   width: 33.3333%;
+}
+
+.map {
+  border-left: 1px solid #fff;
+  position: absolute;
+  left: 33.3333%;
+  width: 66.6666%;
+  top: 0;
+  bottom: 0;
+}
+
+.pad2 {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
