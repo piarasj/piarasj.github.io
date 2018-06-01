@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+<link rel="stylesheet" type="text/css" href="scripts/style.css"/>
+<head>
+	<title>Test</title>
+</head>
+<body>
+<div class='sidebar'>
+  <div class='heading'>
+    <h1>Our locations</h1>
+  </div>
+  <div id='listings' class='listings'></div>
+</div>
+
+
+<div id='map' class='map pad2'>Map</div>
+
+
+
+<script>
+  // This will let you use the .remove() function later on
+  if (!('remove' in Element.prototype)) {
+    Element.prototype.remove = function() {
+      if (this.parentNode) {
+          this.parentNode.removeChild(this);
+      }
+    };
+  }
+  
+mapboxgl.accessToken = 'pk.eyJ1IjoicGlhcmFzaiIsImEiOiJjamh0MHQ5MnYwODMzM3FxaW9maGZ6Z2NxIn0.w_5AKzOBpznRAKXEnfQEzQ';
+// This adds the map to your page
+var map = new mapboxgl.Map({
+  // container id specified in the HTML
+  container: 'map',
+  // style URL
+  style: 'mapbox://styles/mapbox/light-v9',
+  // initial position in [lon, lat] format
+  center: [-77.034084, 38.909671],
+  // initial zoom
+  zoom: 14
+});
+
+var stores = {
+  // data from sweetgreen.geojson, downloaded above
+};
+
+
+  // This adds the data to the map
+  map.on('load', function (e) {
+    // This is where your '.addLayer()' used to be, instead add only the source without styling a layer
+    map.addSource("places", {
+      "type": "geojson",
+      data: 'SpiritualityCentres.geojson'
+    });
+    // Initialize the list
+    buildLocationList(stores);
+  });
+
+
+
+function buildLocationList(data) {
+  // Iterate through the list of stores
+  for (i = 0; i < data.features.length; i++) {
+    var currentFeature = data.features[i];
+    // Shorten data.feature.properties to just `prop` so we're not
+    // writing this long form over and over again.
+    var prop = currentFeature.properties;
+    // Select the listing container in the HTML and append a div
+    // with the class 'item' for each store
+    var listings = document.getElementById('listings');
+    var listing = listings.appendChild(document.createElement('div'));
+    listing.className = 'item';
+    listing.id = 'listing-' + i;
+
+    // Create a new link with the class 'title' for each store
+    // and fill it with the store address
+    var link = listing.appendChild(document.createElement('a'));
+    link.href = '#';
+    link.className = 'title';
+    link.dataPosition = i;
+    link.innerHTML = prop.address;
+
+    // Create a new div with the class 'details' for each store
+    // and fill it with the city and phone number
+    var details = listing.appendChild(document.createElement('div'));
+    details.innerHTML = prop.city;
+    if (prop.phone) {
+      details.innerHTML += ' &middot; ' + prop.phoneFormatted;
+    }
+  }
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

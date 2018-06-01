@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta charset='utf-8' />
-      <title>Spirituality Centre Locator</title>
+      <title>Store Locator</title>
       <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
       <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
       <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
@@ -18,52 +18,9 @@
       </div>
     <div id='listings' class='listings'></div>
     </div>
-    <div id='map' class='map'> 
-    <div id='menu'>
-    <input id='basic' type='radio' name='rtoggle' value='basic' checked='checked'>
-    <label for='basic'>basic</label>
-    <input id='streets' type='radio' name='rtoggle' value='streets'>
-    <label for='streets'>streets</label>
-    <input id='bright' type='radio' name='rtoggle' value='bright'>
-    <label for='bright'>bright</label>
-    <input id='light' type='radio' name='rtoggle' value='light'>
-    <label for='light'>light</label>
-    <input id='dark' type='radio' name='rtoggle' value='dark'>
-    <label for='dark'>dark</label>
-    <input id='satellite' type='radio' name='rtoggle' value='satellite'>
-    <label for='satellite'>satellite</label>
-</div>
-    
-    </div>
+    <div id='map' class='map'> </div>
 
-  
-
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoicGlhcmFzaiIsImEiOiJjamh0MHQ5MnYwODMzM3FxaW9maGZ6Z2NxIn0.w_5AKzOBpznRAKXEnfQEzQ';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/basic-v9',
-    zoom: 13,
-    center: [-6.1737, 53.3663]
-});
-
-map.addControl(new mapboxgl.NavigationControl());
-
-
-var layerList = document.getElementById('menu');
-var inputs = layerList.getElementsByTagName('input');
-
-function switchLayer(layer) {
-    var layerId = layer.target.id;
-    map.setStyle('mapbox://styles/mapbox/' + layerId + '-v9');
-}
-
-for (var i = 0; i < inputs.length; i++) {
-    inputs[i].onclick = switchLayer;
-}
-
-  
-  
+  <script>
   // This will let you use the .remove() function later on
   if (!('remove' in Element.prototype)) {
     Element.prototype.remove = function() {
@@ -715,10 +672,7 @@ map.on('load', function(e) {
         details.innerHTML += ' &middot; ' + prop.Phone;
       }
 
-let popup = new mapboxgl.Popup()
-popup.on('close', function(e) {
-    alert()
-})
+
 
       link.addEventListener('click', function(e){
         // Update the currentFeature to the store associated with the clicked link
