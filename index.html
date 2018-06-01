@@ -1,6 +1,6 @@
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
-<link rel="stylesheet" type="text/css" href="/scripts/style.css"/>
+<link rel="stylesheet" type="text/css" href="scripts/style.css"/>
 <div class='sidebar pad2'>Listing</div>
 <div id='map' class='map pad2'>Map</div>
 
@@ -13,22 +13,20 @@ var map = new mapboxgl.Map({
   // style URL
   style: 'mapbox://styles/mapbox/light-v9',
   // initial position in [lon, lat] format
-  center: [-77.034084, 38.909671],
+
+//USA
+//  center: [-77.034084, 38.909671],
+//Rome  
+    center: [12.4605074, 41.9013525],
   // initial zoom
-  zoom: 14, 
+  zoom: 10, 
   logoPositionstring: 'top-left'
-
 });
-
-map.addSource('some id', {
-  type: 'geojson',
-  data: 'https://github.com/piarasj/piarasj.github.io/blob/master/sweetgreen.geojson'
-});
-
 
 var stores = {
   // data from sweetgreen.geojson, downloaded above
 };
+
 
 map.on('load', function(e) {
   // Add the data to your map as a layer
@@ -38,7 +36,7 @@ map.on('load', function(e) {
     // Add a GeoJSON source containing place coordinates and information.
     source: {
       type: 'geojson',
-      data: stores
+      data: "SpiritualityCentres.geojson"
     },
     layout: {
       'icon-image': 'restaurant-15',
