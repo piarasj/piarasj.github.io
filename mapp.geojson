@@ -396,6 +396,125 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ -5.6559544,40.9646113 ]
+    },
+    "properties": {
+    "Centre":"Centro de Espiritualidad San Ignacio",
+    "Province":"ESP",
+    "Web":"",
+    "Phone":"Teléfono: 923 125 000",
+    "Address":"Paseo San Antonio, 14-40, 37003 Salamanca, España",
+    "marker-color":"#000080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6809452,40.5506654 ]
+    },
+    "properties": {
+    "Centre":"Comillas",
+    "Province":"ESP",
+    "Web":"",
+    "Phone":"",
+    "Address":"Universidad Comillas, 3 – 28049 Madrid",
+    "marker-color":"#000080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.831179,41.7215574 ]
+    },
+    "properties": {
+    "Centre":"Cova St Ignasi",
+    "Province":"ESP",
+    "Web":"",
+    "Phone":"",
+    "Address":"Cova de Sant Ignasi Camí de la Cova 17, 08241 Manresa (Barcelona)",
+    "marker-color":"#000080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.2823535,43.1731364 ]
+    },
+    "properties": {
+    "Centre":"Loiola Auzoa, 15 – 20730 Azpeitia (Gipuzkoa)",
+    "Province":"ESP",
+    "Web":"",
+    "Phone":"",
+    "Address":"Loiola Auzoa, 15 – 20730 Azpeitia (Gipuzkoa)",
+    "marker-color":"#000080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.2146105,42.5942381 ]
+    },
+    "properties": {
+    "Centre":"Santuario San Francisco Javier",
+    "Province":"ESP",
+    "Web":"https://www.santuariojaviersj.org/",
+    "Phone":"",
+    "Address":"Plaza San Francisco Javier, 4, 31411 JAVIER, Navarra",
+    "marker-color":"#000080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.243795,36.042623 ]
+    },
+    "properties": {
+    "Centre":"Dar Manresa",
+    "Province":"EUM",
+    "Web":"",
+    "Phone":"",
+    "Address":"Triq Santa Dminka, Victoria VCT 9037, Gozo, Malta",
+    "marker-color":"#000080",
+    "marker-symbol":"circle-stroked",
+    "marker-size":"small"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.4144274,35.9142704 ]
+    },
+    "properties": {
+    "Centre":"Mount Saint Joseph Retreat House",
+    "Province":"EUM",
+    "Web":"",
+    "Phone":"",
+    "Address":"Triq il-Missjunarji Maltin, Il-Mosta MST 9072, Malta",
+    "marker-color":"#000080",
+    "marker-symbol":"religious-christian",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ 50.4788625,8.0516937 ]
     },
     "properties": {
@@ -487,7 +606,7 @@
     "Centre":"Zukunftswerkstatt",
     "Province":"GER",
     "Web":"https://zukunftswerkstatt-sj.de",
-    "Phone":" +49 69 6061 685",
+    "Phone":"+49 69 6061 685",
     "Address":"Offenbacher Landstraße 224, 60 599 Frankfurt",
     "marker-color":"#000080",
     "marker-symbol":"",
