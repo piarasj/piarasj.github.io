@@ -102,7 +102,7 @@ a:hover {
 }
 
 .listings .item.active {
-  background-color: #D3552e;
+  background-color: #C25C3A;
   color: #F6F6F4;
 }
 
@@ -151,7 +151,7 @@ canvas.mapboxgl-canvas {
 }
 
 .mapboxgl-popup {
-  padding-bottom: 16px;
+  padding-bottom: 52px;
 }
 
 .mapboxgl-popup-close-button {
@@ -171,7 +171,7 @@ canvas.mapboxgl-canvas {
 }
 
 .mapboxgl-popup-content h3 {
-  background: #d3552e;
+  background: #C35D3B;
   color: #FFF;
   margin: 0;
   display: block;
