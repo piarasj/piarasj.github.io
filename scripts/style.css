@@ -31,6 +31,22 @@ body {
   padding: 20px;
 }
 
+.country {
+  font-style: oblique;
+  padding-right: 6px;
+  text-align: right;
+  /*+border-radius: 5px;*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #F1C0B1;
+  background-color: rgba(210, 85, 46, 0.077);
+  color: #D3552E;
+  margin-left: 120px;
+}
+
 .map {
   position: absolute;
   /*left: 0%;*/
@@ -74,7 +90,7 @@ a:hover {
 
 .listings .item {
   display: block;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #F8E7E2;
   padding: 10px;
   text-decoration: none;
 }
