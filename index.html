@@ -869,11 +869,10 @@ map.addControl(new mapboxgl.NavigationControl());
       link.innerHTML = prop.Centre;
 
       var details = listing.appendChild(document.createElement('div'));
-      details.innerHTML = prop.Province;
-      if (prop.Centre) {
-        details.innerHTML += ' &middot; ' + prop.Country;
-      }
-
+      details.innerHTML = '<div class= "country">' +  prop.Country + '</div>';
+//      if (prop.Centre) {
+//        details.innerHTML += ' &middot; ' + prop.Address;
+//      }
 
 
       link.addEventListener('click', function(e){
