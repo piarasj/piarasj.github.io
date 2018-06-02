@@ -45,7 +45,7 @@
     // initial position in [long, lat] format
  center: [8.566015, 47.175605],
     // initial zoom
-    zoom: 5,
+    zoom: 4,
     scrollZoom: true
   });
   
@@ -869,9 +869,9 @@ map.addControl(new mapboxgl.NavigationControl());
       link.innerHTML = prop.Centre;
 
       var details = listing.appendChild(document.createElement('div'));
-      details.innerHTML = prop.Address;
+      details.innerHTML = prop.Province;
       if (prop.Centre) {
-        details.innerHTML += ' &middot; ' + prop.Province;
+        details.innerHTML += ' &middot; ' + prop.Country;
       }
 
 
