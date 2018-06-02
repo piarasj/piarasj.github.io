@@ -11,13 +11,11 @@
         ]
       },
       "properties": {
-        "Centre": "Mount Saint Joseph Retreat House,",
+        "Centre": "Mount Saint Joseph Retreat House",
+        "Province": "EUM",
         "Web": "",
         "Phone": "",
-        "Address": "Triq il-Missjunarji Maltin, Il-Mosta MST 9072, Malta",
-        "marker-color": "#000080",
-        "marker-symbol": "religious-christian",
-        "marker-size": ""
+        "Address": "Triq il-Missjunarji Maltin, Il-Mosta MST 9072, Malta"
       }
     },
     {
@@ -31,12 +29,10 @@
       },
       "properties": {
         "Centre": "Dar Manresa",
+        "Province": "EUM",
         "Web": "",
         "Phone": "",
-        "Address": "Triq Santa Dminka, Victoria VCT 9037, Gozo, Malta",
-        "marker-color": "#000080",
-        "marker-symbol": "circle-stroked",
-        "marker-size": "small"
+        "Address": "Triq Santa Dminka, Victoria VCT 9037, Gozo, Malta"
       }
     },
     {
@@ -50,11 +46,10 @@
       },
       "properties": {
         "Centre": "Comillas",
+        "Province": "ESP",
         "Web": "",
         "Phone": "",
-        "Address": "Universidad Comillas, 3 – 28049 Madrid",
-        "marker-color": "#000080",
-        "marker-symbol": ""
+        "Address": "Universidad Comillas, 3 – 28049 Madrid"
       }
     },
     {
@@ -68,10 +63,10 @@
       },
       "properties": {
         "Centre": "Centro de Espiritualidad San Ignacio",
+        "Province": "ESP",
         "Web": "",
         "Phone": "Teléfono: 923 125 000",
-        "Address": "Paseo San Antonio, 14-40, 37003 Salamanca, España",
-        "marker-color": "#000080"
+        "Address": "Paseo San Antonio, 14-40, 37003 Salamanca, España"
       }
     },
     {
@@ -85,10 +80,10 @@
       },
       "properties": {
         "Centre": "Cova St Ignasi",
+        "Province": "ESP",
         "Web": "",
         "Phone": "",
-        "Address": "Cova de Sant Ignasi Camí de la Cova 17, 08241 Manresa (Barcelona)",
-        "marker-color": "#000080"
+        "Address": "Cova de Sant Ignasi Camí de la Cova 17, 08241 Manresa (Barcelona)"
       }
     },
     {
@@ -101,13 +96,11 @@
         ]
       },
       "properties": {
-        "marker-symbol": "circle",
         "Centre": "Curia",
+        "Province": "DIR",
         "Web": "",
         "Phone": "",
-        "Address": "Curia Generalizia, Borgo Santo Spirito 4, 00193, Rome",
-        "marker-color": "#660000",
-        "marker-size": "large"
+        "Address": "Curia Generalizia, Borgo Santo Spirito 4, 00193, Rome"
       }
     },
     {
@@ -121,10 +114,10 @@
       },
       "properties": {
         "Centre": "Santuario San Francisco Javier",
+        "Province": "ESP",
         "Web": "https://www.santuariojaviersj.org/",
         "Phone": "",
-        "Address": "Plaza San Francisco Javier, 4, 31411 JAVIER, Navarra",
-        "marker-color": "#000080"
+        "Address": "Plaza San Francisco Javier, 4, 31411 JAVIER, Navarra"
       }
     },
     {
@@ -138,10 +131,10 @@
       },
       "properties": {
         "Centre": "Loiola Auzoa, 15 – 20730 Azpeitia (Gipuzkoa)",
+        "Province": "ESP",
         "Web": "",
         "Phone": "",
-        "Address": "Loiola Auzoa, 15 – 20730 Azpeitia (Gipuzkoa)",
-        "marker-color": "#000080"
+        "Address": "Loiola Auzoa, 15 – 20730 Azpeitia (Gipuzkoa)"
       }
     },
     {
@@ -155,10 +148,10 @@
       },
       "properties": {
         "Centre": "Jésuites en Provence",
+        "Province": "EOF",
         "Web": "jesuitesenprovence.com",
         "Phone": "",
-        "Address": "13000 Marseille et le Sud-Est de la France",
-        "marker-color": "#000080"
+        "Address": "13000 Marseille et le Sud-Est de la France"
       }
     },
     {
@@ -172,10 +165,10 @@
       },
       "properties": {
         "Centre": "Les Côteaux-Païs",
+        "Province": "EOF",
         "Web": "coteaux-pais.net",
         "Phone": "",
-        "Address": "31000 Toulouse et le Sud-Ouest de la France",
-        "marker-color": "#000080"
+        "Address": "31000 Toulouse et le Sud-Ouest de la France"
       }
     },
     {
@@ -189,10 +182,10 @@
       },
       "properties": {
         "Centre": "Le Châtelard",
+        "Province": "EOF",
         "Web": "www.chatelard-sj.org",
         "Phone": "",
-        "Address": "69340 Francheville (près de Lyon)",
-        "marker-color": "#000080"
+        "Address": "69340 Francheville (près de Lyon)"
       }
     },
     {
@@ -206,10 +199,10 @@
       },
       "properties": {
         "Centre": "Lassalle-Haus",
+        "Province": "HEL",
         "Web": "",
         "Phone": "T: +41 41 757 14 14",
-        "Address": "Bad Schönbrunn, CH-6313 Edlibach",
-        "marker-color": "#000080"
+        "Address": "Bad Schönbrunn, CH-6313 Edlibach"
       }
     },
     {
@@ -223,10 +216,10 @@
       },
       "properties": {
         "Centre": "Penboc'h",
+        "Province": "EOF",
         "Web": "www.penboch.fr",
         "Phone": "",
-        "Address": "56610 Arradon (près de Vannes, au bord du Golf du Morbihan)",
-        "marker-color": "#000080"
+        "Address": "56610 Arradon (près de Vannes, au bord du Golf du Morbihan)"
       }
     },
     {
@@ -240,10 +233,10 @@
       },
       "properties": {
         "Centre": "Manréza",
+        "Province": "BOH",
         "Web": "",
         "Phone": "",
-        "Address": "Pilisszentkereszt-Dobogókő, Téry Ödön u. 6, 2099 Hungary",
-        "marker-color": "#000080"
+        "Address": "Pilisszentkereszt-Dobogókő, Téry Ödön u. 6, 2099 Hungary"
       }
     },
     {
@@ -257,10 +250,10 @@
       },
       "properties": {
         "Centre": "Exerzitienhaus „Marienheim“",
+        "Province": "ASR",
         "Web": "",
         "Phone": "",
-        "Address": "Exerzitienhaus „Marienheim“, Fischereckstraße 23, 4645 Grünau im Almtal",
-        "marker-color": "#000080"
+        "Address": "Exerzitienhaus „Marienheim“, Fischereckstraße 23, 4645 Grünau im Almtal"
       }
     },
     {
@@ -274,10 +267,10 @@
       },
       "properties": {
         "Centre": "Kardinal König Haus",
+        "Province": "ASR",
         "Web": "",
         "Phone": "",
-        "Address": "Kardinal König Haus, Kardinal-König-Platz 3, 1130 Wien",
-        "marker-color": "#000080"
+        "Address": "Kardinal König Haus, Kardinal-König-Platz 3, 1130 Wien"
       }
     },
     {
@@ -291,10 +284,10 @@
       },
       "properties": {
         "Centre": "Ignatiushaus der Jesuiten",
+        "Province": "ASR",
         "Web": "",
         "Phone": "",
-        "Address": "Ignatiushaus der Jesuiten, Domgasse 3, 4020 Linz",
-        "marker-color": "#000080"
+        "Address": "Ignatiushaus der Jesuiten, Domgasse 3, 4020 Linz"
       }
     },
     {
@@ -308,10 +301,10 @@
       },
       "properties": {
         "Centre": "Manrèse",
+        "Province": "EOF",
         "Web": "",
         "Phone": "",
-        "Address": "5 rue Fauveau - 92140 Clamart France",
-        "marker-color": "#000080"
+        "Address": "5 rue Fauveau - 92140 Clamart France"
       }
     },
     {
@@ -325,6 +318,7 @@
       },
       "properties": {
         "Centre": "Dom Rekolekcyjny Św. JózefaKsięża Jezuici",
+        "Province": "PME",
         "Web": "",
         "Phone": "",
         "Address": "43-502 Czechowice-Dziedzice"
@@ -341,6 +335,7 @@
       },
       "properties": {
         "Centre": "La Pairelle",
+        "Province": "EOF",
         "Web": "www.lapairelle.be",
         "Phone": "",
         "Address": "5100 Wepion (près de Namur - Belgique)"
@@ -357,6 +352,7 @@
       },
       "properties": {
         "Centre": "Dom Formacji Duchowej Księży Jezuitów w Kaliszu",
+        "Province": "PME",
         "Web": "",
         "Phone": "",
         "Address": "ul. Św. Kingi 74/8442-226 Częstochowa"
@@ -373,8 +369,9 @@
       },
       "properties": {
         "Centre": "Oude Abdij Drongen",
-        "Web": "",
-        "Phone": "",
+        "Province": "ELC",
+        "Web": "www.oudeabdij.be",
+        "Phone": "+32 9 226 52 26",
         "Address": "Oude Abdij Drongen"
       }
     },
@@ -388,10 +385,8 @@
         ]
       },
       "properties": {
-        "marker-color": "#2CA30F",
-        "marker-size": "small",
-        "marker-symbol": "",
         "Centre": "Mount Street",
+        "Province": "BRI",
         "Web": "",
         "Phone": "T: +44 (0)20-7499 0285",
         "Address": "114 Mount Street, LONDON W1K 3AH"
@@ -408,6 +403,7 @@
       },
       "properties": {
         "Centre": "St Beuno’s",
+        "Province": "BRI",
         "Web": "",
         "Phone": "0044 1745 583444",
         "Address": "Tremeirchion, Saint Asaph LL17 0AS, UK"
@@ -423,10 +419,8 @@
         ]
       },
       "properties": {
-        "marker-color": "#2CA30F",
-        "marker-size": "small",
-        "marker-symbol": "",
         "Centre": "Jesuit Centre of Spirituality and Culture",
+        "Province": "HIB",
         "Web": "",
         "Phone": "T: 091-725 363",
         "Address": "6 Ely Place, Sea Road, Galway H91 F344"
@@ -442,10 +436,8 @@
         ]
       },
       "properties": {
-        "marker-color": "#000080",
-        "marker-size": "",
-        "marker-symbol": "",
-        "Centre": "Manresa Jesuit Centre of Spirituality ",
+        "Centre": "Manresa Jesuit Centre of Spirituality",
+        "Province": "HIB",
         "Web": "www.manresa.ie",
         "Phone": "+353 1 833 1352",
         "Address": "426 Clontarf Road, Dollymount, Dublin, D03 FP52, Ireland"
@@ -462,6 +454,7 @@
       },
       "properties": {
         "Centre": "Ignacjańskie Centrum Formacji Duchowej",
+        "Province": "BOH",
         "Web": "",
         "Phone": "",
         "Address": "ul. Tatrzańska 35, 81-313 Gdynia"
@@ -478,6 +471,7 @@
       },
       "properties": {
         "Centre": "Gyvenimo ir tikejimo institutas",
+        "Province": "LIT",
         "Web": "",
         "Phone": "",
         "Address": "Aleksoto g. 6 LT - 44280 Kaunas"
@@ -494,11 +488,129 @@
       },
       "properties": {
         "Centre": "Ignatian Spirituality Centre",
+        "Province": "BRI",
         "Web": "",
         "Phone": "T: 0141-354 0077",
-        "Address": "35 Scott Street GLASGOW G3 6PE",
-        "marker-size": "small",
-        "marker-color": "#2CA30F"
+        "Address": "35 Scott Street GLASGOW G3 6PE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.85908,
+          51.02193
+        ]
+      },
+      "properties": {
+        "Centre": "Haus HohenEichen",
+        "Province": "GER",
+        "Web": "www.haus-hoheneichen.de",
+        "Phone": "Tel.: 0351 26164-10",
+        "Address": "Exerzitienhaus, Dresdner Straße 73, 01326 Dresden"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.131745,
+          46.7965317
+        ]
+      },
+      "properties": {
+        "Centre": "Notre dame de la route",
+        "Province": "HEL",
+        "Web": "https://www.domaine-ndr.ch",
+        "Phone": "Telephone: +41 26 409 75 00",
+        "Address": "Notre dame de la route, Ch. des Eaux-Vives 17, 1752 Villars-sur-Glâne"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0516937,
+          50.4788625
+        ]
+      },
+      "properties": {
+        "Centre": "Ashram Jesu",
+        "Province": "GER",
+        "Web": "http://ashram-jesu.de",
+        "Phone": "Telephone: +41 26 409 75 00",
+        "Address": "Hirsenmühle, Oberziegenfurter Mühle 1, 65589 Hadamar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1709472,
+          51.8639785
+        ]
+      },
+      "properties": {
+        "Centre": "Exerzitienhaus - Stanislauskolleg HochElten",
+        "Province": "GER",
+        "Web": "http://www.stanislauskolleg.de",
+        "Phone": "Tel: 02828 90252-0",
+        "Address": "Stanislauskolleg HochElten, Freiheit 2, 46446 Emmerich am Rhein"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3710278,
+          51.330845
+        ]
+      },
+      "properties": {
+        "Centre": "Freiraum – Jesuiten",
+        "Province": "GER",
+        "Web": "http://freiraum-jesuiten.org",
+        "Phone": "tel.: 0341 / 4225009",
+        "Address": "Floßplatz 32, 04107 Leipzig"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3420094,
+          50.2905125
+        ]
+      },
+      "properties": {
+        "Centre": "Haus Gries",
+        "Province": "GER",
+        "Web": "https://www.haus-gries.de",
+        "Phone": "Tel: 09260/220",
+        "Address": "Gries 6, 96352 Wilhelmsthal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7134007,
+          50.0991294
+        ]
+      },
+      "properties": {
+        "Centre": "Zukunftswerkstatt",
+        "Province": "GER",
+        "Web": "https://zukunftswerkstatt-sj.de",
+        "Phone": " +49 69 6061 685",
+        "Address": "Offenbacher Landstraße 224, 60 599 Frankfurt"
       }
     }
   ]
