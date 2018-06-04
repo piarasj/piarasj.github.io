@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset='utf-8' />
+      <title>Store Locator</title>
+      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
+      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+<link rel="stylesheet" type="text/css" href="scripts/style.css"/>
+
+   </head>
+
+  <body>
+    <div class='sidebar'>
+      <div class='heading'>
+        <h1>Spirituality Centres</h1>
+      </div>
+    <div id='listings' class='listings'></div>
+    </div>
+    <div id='map' class='map'> </div>
+
+  <script>
+  // This will let you use the .remove() function later on
+  if (!('remove' in Element.prototype)) {
+    Element.prototype.remove = function() {
+      if (this.parentNode) {
+          this.parentNode.removeChild(this);
+      }
+    };
+  }
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2lqbmpqazdlMDBsdnRva284cWd3bm11byJ9.V6Hg2oYJwMAxeoR9GEzkAA';
+
+  // This adds the map
+  var map = new mapboxgl.Map({
+    // container id specified in the HTML
+    container: 'map',
+    // style URL
+    style: 'mapbox://styles/mapbox/light-v9',
+    // initial position in [long, lat] format
+ center: [12.4605074, 41.9013525],
+    // initial zoom
+    zoom: 3,
+    scrollZoom: false
+  });
+  
+  map.addControl(new mapboxgl.NavigationControl());
+
+
+map.on('load', function(e) {
+  // Add the data to your map as a layer
+  map.addLayer({
+    id: 'locations',
+    type: 'symbol',
+    // Add a GeoJSON source containing place coordinates and information.
+    source: {
+      type: 'geojson',
+      data: stores
+    },
+    layout: {
+      'icon-image': 'circle-15',
+      'icon-allow-overlap': true,
+    }
+  });
+});
+
+
+
+
+
+
+  var stores = 
+ // Paste below 
+ 
+ {
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.4144274,35.9142704 ]
+    },
+    "properties": {
+    "Centre":"Mount Saint Joseph Retreat House",
+    "Province":"EUM",
+    "Web":"",
+    "Phone":"",
+    "Address":"Triq il-Missjunarji Maltin, Il-Mosta MST 9072, Malta"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.243795,36.042623 ]
+    },
+    "properties": {
+    "Centre":"Dar Manresa",
+    "Province":"EUM",
+    "Web":"",
+    "Phone":"",
+    "Address":"Triq Santa Dminka, Victoria VCT 9037, Gozo, Malta"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6809452,40.5506654 ]
+    },
+    "properties": {
+    "Centre":"Comillas",
+    "Province":"ESP",
+    "Web":"",
+    "Phone":"",
+    "Address":"Universidad Comillas, 3 – 28049 Madrid"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.6559544,40.9646113 ]
+    },
+    "properties": {
+    "Centre":"Centro de Espiritualidad San Ignacio",
+    "Province":"ESP",
+    "Web":"",
+    "Phone":"Teléfono: 923 125 000",
+    "Address":"Paseo San Antonio, 14-40, 37003 Salamanca, España"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.831179,41.7215574 ]
+    },
+    "properties": {
+    "Centre":"Cova St Ignasi",
+    "Province":"ESP",
+    "Web":"",
+    "Phone":"",
+    "Address":"Cova de Sant Ignasi Camí de la Cova 17, 08241 Manresa (Barcelona)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.4605074,41.9013525 ]
+    },
+    "properties": {
+    "Centre":"Curia",
+    "Province":"DIR",
+    "Web":"",
+    "Phone":"",
+    "Address":"Curia Generalizia, Borgo Santo Spirito 4, 00193, Rome"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.2146105,42.5942381 ]
+    },
+    "properties": {
+    "Centre":"Santuario San Francisco Javier",
+    "Province":"ESP",
+    "Web":"https://www.santuariojaviersj.org/",
+    "Phone":"",
+    "Address":"Plaza San Francisco Javier, 4, 31411 JAVIER, Navarra"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.2823535,43.1731364 ]
+    },
+    "properties": {
+    "Centre":"Loiola Auzoa, 15 – 20730 Azpeitia (Gipuzkoa)",
+    "Province":"ESP",
+    "Web":"",
+    "Phone":"",
+    "Address":"Loiola Auzoa, 15 – 20730 Azpeitia (Gipuzkoa)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.3988067,43.2968723 ]
+    },
+    "properties": {
+    "Centre":"Jésuites en Provence",
+    "Province":"EOF",
+    "Web":"jesuitesenprovence.com",
+    "Phone":"",
+    "Address":"13000 Marseille et le Sud-Est de la France"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.4567445,43.5985412 ]
+    },
+    "properties": {
+    "Centre":"Les Côteaux-Païs",
+    "Province":"EOF",
+    "Web":"coteaux-pais.net",
+    "Phone":"",
+    "Address":"31000 Toulouse et le Sud-Ouest de la France"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.7548539,45.7339943 ]
+    },
+    "properties": {
+    "Centre":"Le Châtelard",
+    "Province":"EOF",
+    "Web":"www.chatelard-sj.org",
+    "Phone":"",
+    "Address":"69340 Francheville (près de Lyon)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.566015,47.175605 ]
+    },
+    "properties": {
+    "Centre":"Lassalle-Haus",
+    "Province":"HEL",
+    "Web":"",
+    "Phone":"T: +41 41 757 14 14",
+    "Address":"Bad Schönbrunn, CH-6313 Edlibach"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.840289,47.62172 ]
+    },
+    "properties": {
+    "Centre":"Penboc'h",
+    "Province":"EOF",
+    "Web":"www.penboch.fr",
+    "Phone":"",
+    "Address":"56610 Arradon (près de Vannes, au bord du Golf du Morbihan)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.890361,47.71923 ]
+    },
+    "properties": {
+    "Centre":"Manréza",
+    "Province":"BOH",
+    "Web":"",
+    "Phone":"",
+    "Address":"Pilisszentkereszt-Dobogókő, Téry Ödön u. 6, 2099 Hungary"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.9605088,47.8567964 ]
+    },
+    "properties": {
+    "Centre":"Exerzitienhaus „Marienheim“",
+    "Province":"ASR",
+    "Web":"",
+    "Phone":"",
+    "Address":"Exerzitienhaus „Marienheim“, Fischereckstraße 23, 4645 Grünau im Almtal"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.2831798,48.1775504 ]
+    },
+    "properties": {
+    "Centre":"Kardinal König Haus",
+    "Province":"ASR",
+    "Web":"",
+    "Phone":"",
+    "Address":"Kardinal König Haus, Kardinal-König-Platz 3, 1130 Wien"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.2878588,48.3049973 ]
+    },
+    "properties": {
+    "Centre":"Ignatiushaus der Jesuiten",
+    "Province":"ASR",
+    "Web":"",
+    "Phone":"",
+    "Address":"Ignatiushaus der Jesuiten, Domgasse 3, 4020 Linz"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.2589969,48.7983321 ]
+    },
+    "properties": {
+    "Centre":"Manrèse",
+    "Province":"EOF",
+    "Web":"",
+    "Phone":"",
+    "Address":"5 rue Fauveau - 92140 Clamart France"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.9917677,49.9016056 ]
+    },
+    "properties": {
+    "Centre":"Dom Rekolekcyjny Św. JózefaKsięża Jezuici",
+    "Province":"PME",
+    "Web":"",
+    "Phone":"",
+    "Address":"43-502 Czechowice-Dziedzice"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8633172,50.421206 ]
+    },
+    "properties": {
+    "Centre":"La Pairelle",
+    "Province":"EOF",
+    "Web":"www.lapairelle.be",
+    "Phone":"",
+    "Address":"5100 Wepion (près de Namur - Belgique)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.0851127,50.8116791 ]
+    },
+    "properties": {
+    "Centre":"Dom Formacji Duchowej Księży Jezuitów w Kaliszu",
+    "Province":"PME",
+    "Web":"",
+    "Phone":"",
+    "Address":"ul. Św. Kingi 74/8442-226 Częstochowa"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.663736,51.049832 ]
+    },
+    "properties": {
+    "Centre":"Oude Abdij Drongen",
+    "Province":"ELC",
+    "Web":"www.oudeabdij.be",
+    "Phone":"+32 9 226 52 26",
+    "Address":"Oude Abdij Drongen"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1490017,51.5098299 ]
+    },
+    "properties": {
+    "Centre":"Mount Street",
+    "Province":"BRI",
+    "Web":"",
+    "Phone":"T: +44 (0)20-7499 0285",
+    "Address":"114 Mount Street, LONDON W1K 3AH"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.3801855,53.2573171 ]
+    },
+    "properties": {
+    "Centre":"St Beuno’s",
+    "Province":"BRI",
+    "Web":"",
+    "Phone":"0044 1745 583444",
+    "Address":"Tremeirchion, Saint Asaph LL17 0AS, UK"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.0620976,53.2689671 ]
+    },
+    "properties": {
+    "Centre":"Jesuit Centre of Spirituality and Culture",
+    "Province":"HIB",
+    "Web":"",
+    "Phone":"T: 091-725 363",
+    "Address":"6 Ely Place, Sea Road, Galway H91 F344"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.1737294,53.3662901 ]
+    },
+    "properties": {
+    "Centre":"Manresa Jesuit Centre of Spirituality",
+    "Province":"HIB",
+    "Web":"www.manresa.ie",
+    "Phone":"+353 1 833 1352",
+    "Address":"426 Clontarf Road, Dollymount, Dublin, D03 FP52, Ireland"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.5273051,54.5162366 ]
+    },
+    "properties": {
+    "Centre":"Ignacjańskie Centrum Formacji Duchowej",
+    "Province":"BOH",
+    "Web":"",
+    "Phone":"",
+    "Address":"ul. Tatrzańska 35, 81-313 Gdynia"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.8864054,54.8956176 ]
+    },
+    "properties": {
+    "Centre":"Gyvenimo ir tikejimo institutas",
+    "Province":"LIT",
+    "Web":"",
+    "Phone":"",
+    "Address":"Aleksoto g. 6 LT - 44280 Kaunas"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.2644458,55.8668466 ]
+    },
+    "properties": {
+    "Centre":"Ignatian Spirituality Centre",
+    "Province":"BRI",
+    "Web":"",
+    "Phone":"T: 0141-354 0077",
+    "Address":"35 Scott Street GLASGOW G3 6PE"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.85908,51.02193 ]
+    },
+    "properties": {
+    "Centre":"Haus HohenEichen",
+    "Province":"GER",
+    "Web":"www.haus-hoheneichen.de",
+    "Phone":"Tel.: 0351 26164-10",
+    "Address":"Exerzitienhaus, Dresdner Straße 73, 01326 Dresden"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.131745,46.7965317 ]
+    },
+    "properties": {
+    "Centre":"Notre dame de la route",
+    "Province":"HEL",
+    "Web":"https://www.domaine-ndr.ch",
+    "Phone":"Telephone: +41 26 409 75 00",
+    "Address":"Notre dame de la route, Ch. des Eaux-Vives 17, 1752 Villars-sur-Glâne"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.0516937,50.4788625 ]
+    },
+    "properties": {
+    "Centre":"Ashram Jesu",
+    "Province":"GER",
+    "Web":"http://ashram-jesu.de",
+    "Phone":"Telephone: +41 26 409 75 00",
+    "Address":"Hirsenmühle, Oberziegenfurter Mühle 1, 65589 Hadamar"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.1709472,51.8639785 ]
+    },
+    "properties": {
+    "Centre":"Exerzitienhaus - Stanislauskolleg HochElten",
+    "Province":"GER",
+    "Web":"http://www.stanislauskolleg.de",
+    "Phone":"Tel: 02828 90252-0",
+    "Address":"Stanislauskolleg HochElten, Freiheit 2, 46446 Emmerich am Rhein"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.3710278,51.330845 ]
+    },
+    "properties": {
+    "Centre":"Freiraum – Jesuiten",
+    "Province":"GER",
+    "Web":"http://freiraum-jesuiten.org",
+    "Phone":"tel.: 0341 / 4225009",
+    "Address":"Floßplatz 32, 04107 Leipzig"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.3420094,50.2905125 ]
+    },
+    "properties": {
+    "Centre":"Haus Gries",
+    "Province":"GER",
+    "Web":"https://www.haus-gries.de",
+    "Phone":"Tel: 09260/220",
+    "Address":"Gries 6, 96352 Wilhelmsthal"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.7134007,50.0991294 ]
+    },
+    "properties": {
+    "Centre":"Zukunftswerkstatt",
+    "Province":"GER",
+    "Web":"https://zukunftswerkstatt-sj.de",
+    "Phone":" +49 69 6061 685",
+    "Address":"Offenbacher Landstraße 224, 60 599 Frankfurt"
+    }
+  }
+]
+}
+ 
+ 
+ 
+ 
+ 
+ //Paste above
+ ;
+    
+    
+  // This adds the data to the map
+  map.on('load', function (e) {
+    // This is where your '.addLayer()' used to be, instead add only the source without styling a layer
+    map.addSource("places", {
+      "type": "geojson",
+      data: 'SpiritualityCentres.geojson'
+    });
+    // Initialize the list
+    buildLocationList(stores);
+  });
+
+  // This is where your interactions with the symbol layer used to be
+  // Now you have interactions with DOM markers instead
+  stores.features.forEach(function(marker, i) {
+    // Create an img element for the marker
+    var el = document.createElement('div');
+    el.id = "marker-" + i;
+    el.className = 'marker';
+    // Add markers to the map at all points
+    new mapboxgl.Marker(el, {offset: [0, -23]})
+        .setLngLat(marker.geometry.coordinates)
+        .addTo(map);
+
+    el.addEventListener('click', function(e){
+        // 1. Fly to the point
+        flyToStore(marker);
+
+        // 2. Close all other popups and display popup for clicked store
+        createPopUp(marker);
+
+        // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+        var activeItem = document.getElementsByClassName('active');
+
+        e.stopPropagation();
+        if (activeItem[0]) {
+           activeItem[0].classList.remove('active');
+        }
+
+        var listing = document.getElementById('listing-' + i);
+        listing.classList.add('active');
+
+    });
+  });
+
+
+  function flyToStore(currentFeature) {
+    map.flyTo({
+        center: currentFeature.geometry.coordinates,
+        zoom: 13
+      });
+  }
+
+  function createPopUp(currentFeature) {
+    var popUps = document.getElementsByClassName('mapboxgl-popup');
+    if (popUps[0]) popUps[0].remove();
+
+
+    var popup = new mapboxgl.Popup({closeOnClick: false})
+          .setLngLat(currentFeature.geometry.coordinates)
+          .setHTML('<h3>' + currentFeature.properties.Centre + '</h3>' +
+            '<h4>' + currentFeature.properties.Address + '</h4>')
+          .addTo(map);
+  }
+
+
+  function buildLocationList(data) {
+    for (i = 0; i < data.features.length; i++) {
+      var currentFeature = data.features[i];
+      var prop = currentFeature.properties;
+
+      var listings = document.getElementById('listings');
+      var listing = listings.appendChild(document.createElement('div'));
+      listing.className = 'item';
+      listing.id = "listing-" + i;
+
+      var link = listing.appendChild(document.createElement('a'));
+      link.href = '#';
+      link.className = 'title';
+      link.dataPosition = i;
+      link.innerHTML = prop.Centre;
+
+      var details = listing.appendChild(document.createElement('div'));
+      details.innerHTML = prop.Address;
+      if (prop.Centre) {
+        details.innerHTML += ' &middot; ' + prop.Phone;
+      }
+
+
+
+      link.addEventListener('click', function(e){
+        // Update the currentFeature to the store associated with the clicked link
+        var clickedListing = data.features[this.dataPosition];
+
+        // 1. Fly to the point
+        flyToStore(clickedListing);
+
+        // 2. Close all other popups and display popup for clicked store
+        createPopUp(clickedListing);
+
+        // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+        var activeItem = document.getElementsByClassName('active');
+
+        if (activeItem[0]) {
+           activeItem[0].classList.remove('active');
+        }
+        this.parentNode.classList.add('active');
+
+      });
+    }
+  }
+  
+ 
+  
+
+    </script>
+  </body>
+</html>
+

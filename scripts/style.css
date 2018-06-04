@@ -1,32 +1,220 @@
 @charset "UTF-8";
 /* CSS Document */
 body {
-  background: #404040;
-  color: #f8f8f8;
-  font: 500 20px/26px 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  color: #404040;
+  font: 400 15px / 22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
 }
 
-/* The page is split between map and sidebar - the sidebar gets 1/3, map
-gets 2/3 of the page. You can adjust this to your personal liking. */
-.sidebar {
-  width: 33.3333%;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.map {
-  border-left: 1px solid #fff;
+.sidebar {
   position: absolute;
-  left: 33.3333%;
-  width: 66.6666%;
-  top: 0;
-  bottom: 0;
+  direction: rtl;
+  width: 20%;
+  height: 100%;
+  top: 1px;
+  left: 80%;
+  overflow: hidden;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  left: 80%;
+  text-align: left;
 }
 
 .pad2 {
   padding: 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+}
+
+.country {
+  font-style: oblique;
+  padding-right: 6px;
+  text-align: right;
+  /*+border-radius: 5px;*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(210, 85, 46, 0.077);
+  color: #D3552E;
+  margin-left: 120px;
+}
+
+.map {
+  position: absolute;
+  /*left: 0%;*/
+  width: 80%;
+  top: 0;
+  bottom: 0;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20px 2px;
+}
+
+a {
+  color: #404040;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #101010;
+}
+
+.heading {
+  background: #FFF;
+  border-bottom: 1px solid #EEE;
+  min-height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  background-color: #D3552E;
+  color: #FFF;
+}
+
+.listings {
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+.listings .item {
+  display: block;
+  border-bottom: 1px solid #F8E7E2;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.listings .item:last-child {
+  border-bottom: none;
+}
+
+.listings .item .title {
+  display: block;
+  color: #C35D3B;
+  font-weight: 700;
+}
+
+.listings .item .title small {
+  font-weight: 400;
+}
+
+.listings .item.active .title {
+  color: #FAFAFA;
+}
+
+.listings .item .title:hover {
+  color: #F9A389;
+}
+
+.listings .item.active {
+  background-color: #C25C3A;
+  color: #F6F6F4;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+  /*border-right: 0;*/
+  background: rgba(0, 0, 0, 0.1);
+  /*border-left: 1px solid black;*/
+  position: absolute;
+}
+
+::-webkit-scrollbar-track {
+  background: none rgba(247, 183, 138, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D3552E;
+  border-radius: 4px;
+}
+
+.marker {
+  border: none;
+  cursor: pointer;
+  height: 56px;
+  width: 56px;
+  background-image: url(marker.png);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Marker tweaks */
+canvas.mapboxgl-canvas {
+  width: 80%;
+}
+
+.mapboxgl-popup {
+  padding-bottom: 52px;
+}
+
+.mapboxgl-popup-close-button {
+  /*display: inline;*/
+  font-size: larger;
+  color: #CCD2D3;
+}
+
+.mapboxgl-popup-content {
+  font: 400 15px / 22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  padding: 0;
+  width: 200px;
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 1%;
+}
+
+.mapboxgl-popup-content h3 {
+  background: #C35D3B;
+  color: #FFF;
+  margin: 0;
+  display: block;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+  font-weight: 700;
+  margin-top: -15px;
+}
+
+.mapboxgl-popup-content h4 {
+  margin: 0;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  font-weight: 400;
+}
+
+.mapboxgl-popup-content div {
+  padding: 10px;
+}
+
+.mapboxgl-container .leaflet-marker-icon {
+  cursor: pointer;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+  margin-top: 15px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+  border-bottom-color: #D3552E;
 }
