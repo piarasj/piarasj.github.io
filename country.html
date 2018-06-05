@@ -57,8 +57,58 @@ map.addControl(new mapboxgl.NavigationControl());
 
 
     
-map.on("load",function(e){map.addSource("places",{type:"geojson",data:stores}),buildLocationList(stores)}),stores.features.forEach(function(a,o){var e=document.createElement("div");e.id="marker-"+o,e.className="marker",new mapboxgl.Marker(e,{offset:[0,-23]}).setLngLat(a.geometry.coordinates).addTo(map),e.addEventListener("click",function(e){flyToStore(a),createPopUp(a);var t=document.getElementsByClassName("active");e.stopPropagation(),t[0]&&t[0].classList.remove("active"),document.getElementById("listing-"+o).classList.add("active")})});
-function flyToStore(o){map.flyTo({center:o.geometry.coordinates,zoom:13})}
+// This adds the data to the map
+  map.on('load', function (e) {
+    // This is where your '.addLayer()' used to be, instead add only the source without styling a layer
+    map.addSource("places", {
+      "type": "geojson",
+      "data": stores
+    });
+    // Initialize the list
+    buildLocationList(stores);
+
+  });
+
+  // This is where your interactions with the symbol layer used to be
+  // Now you have interactions with DOM markers instead
+  stores.features.forEach(function(marker, i) {
+    // Create an img element for the marker
+    var el = document.createElement('div');
+    el.id = "marker-" + i;
+    el.className = 'marker';
+    // Add markers to the map at all points
+    new mapboxgl.Marker(el, {offset: [0, -23]})
+        .setLngLat(marker.geometry.coordinates)
+        .addTo(map);
+
+    el.addEventListener('click', function(e){
+        // 1. Fly to the point
+        flyToStore(marker);
+
+        // 2. Close all other popups and display popup for clicked store
+        createPopUp(marker);
+
+        // 3. Highlight listing in sidebar (and remove highlight for all other listings)
+        var activeItem = document.getElementsByClassName('active');
+
+        e.stopPropagation();
+        if (activeItem[0]) {
+           activeItem[0].classList.remove('active');
+        }
+
+        var listing = document.getElementById('listing-' + i);
+        listing.classList.add('active');
+
+    });
+  });
+
+
+  function flyToStore(currentFeature) {
+    map.flyTo({
+        center: currentFeature.geometry.coordinates,
+        zoom: 13
+      });
+  }
 
   function createPopUp(currentFeature) {
     var popUps = document.getElementsByClassName('mapboxgl-popup');
@@ -67,7 +117,6 @@ function flyToStore(o){map.flyTo({center:o.geometry.coordinates,zoom:13})}
 
     var popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(currentFeature.geometry.coordinates)
-//Popup elements
           .setHTML('<h3>' + currentFeature.properties.Centre + '</h3>' +
             '<h4>' + currentFeature.properties.Address + '</h4>')
           .addTo(map);
@@ -83,6 +132,7 @@ function flyToStore(o){map.flyTo({center:o.geometry.coordinates,zoom:13})}
       var listing = listings.appendChild(document.createElement('div'));
       listing.className = 'item';
       listing.id = "listing-" + i;
+
       var link = listing.appendChild(document.createElement('a'));
       link.href = '#';
       link.className = 'title';
@@ -90,20 +140,12 @@ function flyToStore(o){map.flyTo({center:o.geometry.coordinates,zoom:13})}
       link.innerHTML = prop.Centre;
 
       var details = listing.appendChild(document.createElement('div'));
-<<<<<<< HEAD
-// Country CSS and name
-      details.innerHTML = '<div class= "country">' +  prop.Country + '</div>';
-=======
       details.innerHTML = '<div class= "country">' +  prop.Country + '<img src = "syles/svg/"+  prop.Country + '.svg>';
->>>>>>> fed15e9eaf9a7758ecd998feadf802ac5188217a
 //      if (prop.Centre) {
 //        details.innerHTML += ' &middot; ' + prop.Address;
 //      }
 
 
-<<<<<<< HEAD
-link.addEventListener("click",function(e){var t=data.features[this.dataPosition];flyToStore(t),createPopUp(t);var a=document.getElementsByClassName("active");a[0]&&a[0].classList.remove("active"),this.parentNode.classList.add("active")});}}
-=======
 
       link.addEventListener('click', function(e){
         // Update the currentFeature to the store associated with the clicked link
@@ -126,10 +168,6 @@ link.addEventListener("click",function(e){var t=data.features[this.dataPosition]
       });
     }
   }
-  
->>>>>>> fed15e9eaf9a7758ecd998feadf802ac5188217a
- 
-
-    </script>
+      </script>
   </body>
 </html>
