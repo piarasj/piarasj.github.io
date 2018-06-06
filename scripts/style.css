@@ -31,21 +31,6 @@ body {
   padding: 20px;
 }
 
-.country {
-  font-style: oblique;
-  padding-right: 6px;
-  text-align: right;
-  /*+border-radius: 5px;*/
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  font-weight: bold;
-  background-color: rgba(210, 85, 46, 0.077);
-  color: #D3552E;
-  margin-left: 120px;
-}
-
 .map {
   position: absolute;
   /*left: 0%;*/
@@ -92,6 +77,8 @@ a:hover {
   border-bottom: 1px solid #F8E7E2;
   padding: 10px;
   text-decoration: none;
+  height: 55px;
+  width: ;
 }
 
 .listings .item:last-child {
@@ -102,6 +89,7 @@ a:hover {
   display: block;
   color: #C35D3B;
   font-weight: 700;
+  clear: right;
 }
 
 .listings .item .title small {
@@ -217,4 +205,33 @@ canvas.mapboxgl-canvas {
 
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
   border-bottom-color: #D3552E;
+}
+
+.country {
+    direction: ltr;
+  font-style: oblique;
+  /*text-align: left;*/
+  /*+border-radius: 5px;*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(210, 85, 46, 0.077);
+  color: #D3552E;
+  /*margin-left: 120px;*/
+  float: right;
+  padding-left: 5px;
+  /*+placement: -1px -3px;*/
+  position: relative;
+  left: -1px;
+  top: -3px;
+}
+
+.flag {
+    direction: ltr;
+  height: 18px;
+  width: 18px;
+  float: right;
+  padding-left: 5px;
 }
