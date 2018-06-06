@@ -802,6 +802,8 @@ function flyToStore(o){map.flyTo({center:o.geometry.coordinates,zoom:13})}
           .addTo(map);
   }
 
+var lowCountry = prop.Country.toLowerCase(); 
+
 
   function buildLocationList(data) {
     for (i = 0; i < data.features.length; i++) {
