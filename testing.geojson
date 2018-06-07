@@ -1,0 +1,47 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.9605088,
+          47.8567964
+        ]
+      },
+      "properties": {
+        "Centre": "Exerzitienhaus „Marienheim“",
+        "Province": "ASR",
+        "Country": "Austria",
+        "Web": "",
+        "Phone": "",
+        "Address": "Exerzitienhaus „Marienheim“, Fischereckstraße 23, 4645 Grünau im Almtal",
+        "marker-color": "#000080",
+        "marker-symbol": "",
+        "marker-size": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.566015,
+          47.175605
+        ]
+      },
+      "properties": {
+        "Centre": "Lassalle-Haus",
+        "Province": "HEL",
+        "Country": "Switzerland",
+        "Web": "",
+        "Phone": " +41 41 757 14 14",
+        "Address": "Bad Schönbrunn, CH-6313 Edlibach",
+        "marker-color": "#000080",
+        "marker-symbol": "",
+        "marker-size": ""
+      }
+    }
+  ]
+}

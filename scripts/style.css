@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
+.popFlag {
+}
+
 body {
   color: #404040;
   font: 400 15px / 22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
@@ -31,10 +34,36 @@ body {
   padding: 20px;
 }
 
+<<<<<<< HEAD
+=======
+#menu {
+  position: absolute;
+  background: rgba(97, 73, 73, 0.556);
+  padding: 1px 6px;
+  color: #FAF3F0;
+  font-size: medium;
+  font-variant: small-caps;
+  /*height: 5%;*/
+  /*width: 400px;*/
+  height: 26px;
+  border-bottom-right-radius: 8px;
+}
+
+.linkCentre a {
+  font-size: smaller;
+  color: #C25D3A;
+  text-align: right;
+  /*+placement: -8px 11px;*/
+  position: relative;
+  left: -8px;
+  top: 11px;
+}
+
+>>>>>>> eb4b6c637a9176791544cbfebdc5a64db85c62aa
 .map {
   position: absolute;
-  /*left: 0%;*/
   width: 80%;
+  /*height: 95%;*/
   top: 0;
   bottom: 0;
 }
@@ -77,6 +106,8 @@ a:hover {
   border-bottom: 1px solid #F8E7E2;
   padding: 10px;
   text-decoration: none;
+  height: 55px;
+  width: ;
 }
 
 .listings .item:last-child {
@@ -87,8 +118,12 @@ a:hover {
   display: block;
   color: #C35D3B;
   font-weight: 700;
+<<<<<<< HEAD
   float: left;
   clear: both;
+=======
+  clear: right;
+>>>>>>> eb4b6c637a9176791544cbfebdc5a64db85c62aa
 }
 
 .listings .item .title small {
@@ -207,8 +242,13 @@ canvas.mapboxgl-canvas {
 }
 
 .country {
+<<<<<<< HEAD
   font-style: oblique;
   padding-right: 6px;
+=======
+  direction: ltr;
+  font-style: oblique;
+>>>>>>> eb4b6c637a9176791544cbfebdc5a64db85c62aa
   /*text-align: left;*/
   /*+border-radius: 5px;*/
   -moz-border-radius: 5px;
@@ -219,6 +259,7 @@ canvas.mapboxgl-canvas {
   background-color: rgba(210, 85, 46, 0.077);
   color: #D3552E;
   /*margin-left: 120px;*/
+<<<<<<< HEAD
   /*float: right;*/
 }
 
@@ -228,4 +269,32 @@ canvas.mapboxgl-canvas {
   float: left;
   width: 8%;
   /*clear: none;*/
+=======
+  float: right;
+  padding-left: 5px;
+  /*+placement: -1px -3px;*/
+  position: relative;
+  left: -1px;
+  top: -3px;
+}
+
+.flag {
+  direction: ltr;
+  height: 18px;
+  width: 18px;
+  float: right;
+  padding-left: 5px;
+}
+
+.popFlag img {
+  /*direction: ltr;*/
+  height: 22px;
+  width: 22px;
+  float: right;
+  /*padding-left: 5px;*/
+  /*+placement: 0px 22px;*/
+  position: relative;
+  left: 0px;
+  top: 22px;
+>>>>>>> eb4b6c637a9176791544cbfebdc5a64db85c62aa
 }

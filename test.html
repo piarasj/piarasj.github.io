@@ -2,24 +2,28 @@
 <html>
   <head>
       <meta charset='utf-8' />
-      <title>Store Locator</title>
+      <title>Jesuit Spirituality Centres</title>
       <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
       <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
       <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
       <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
 <link rel="stylesheet" type="text/css" href="scripts/style.css"/>
 
-
-  </head>
+   </head>
 
   <body>
-    <div class='sidebar'>
-      <div class='heading'>
-        <h1>Our locations</h1>
-      </div>
-    <div id='listings' class='listings'></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+<div id='map' class='map'>
+</div>
+
+<div class='sidebar'>
+    <div class='heading'>
+    	<h1>Jesuit Spirituality Centres</h1>
     </div>
-    <div id='map' class='map'> </div>
+    <div id='listings' class='listings'>
+    </div>
+</div>
 
   <script>
   // This will let you use the .remove() function later on
@@ -40,8 +44,9 @@
     // style URL
     style: 'mapbox://styles/mapbox/light-v9',
     // initial position in [long, lat] format
-    center: [-77.034084142948, 38.909671288923],
+ center: [8.566015, 47.175605],
     // initial zoom
+<<<<<<< HEAD
     zoom: 13,
     scrollZoom: false
   });
@@ -790,48 +795,38 @@
     // Initialize the list
     buildLocationList(stores);
 
+=======
+    zoom: 4,
+    scrollZoom: true
+>>>>>>> eb4b6c637a9176791544cbfebdc5a64db85c62aa
   });
-
-  // This is where your interactions with the symbol layer used to be
-  // Now you have interactions with DOM markers instead
-  stores.features.forEach(function(marker, i) {
-    // Create an img element for the marker
-    var el = document.createElement('div');
-    el.id = "marker-" + i;
-    el.className = 'marker';
-    // Add markers to the map at all points
-    new mapboxgl.Marker(el, {offset: [0, -23]})
-        .setLngLat(marker.geometry.coordinates)
-        .addTo(map);
-
-    el.addEventListener('click', function(e){
-        // 1. Fly to the point
-        flyToStore(marker);
-
-        // 2. Close all other popups and display popup for clicked store
-        createPopUp(marker);
-
-        // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-        var activeItem = document.getElementsByClassName('active');
-
-        e.stopPropagation();
-        if (activeItem[0]) {
-           activeItem[0].classList.remove('active');
-        }
-
-        var listing = document.getElementById('listing-' + i);
-        listing.classList.add('active');
-
-    });
-  });
+  
+map.addControl(new mapboxgl.NavigationControl());
 
 
-  function flyToStore(currentFeature) {
-    map.flyTo({
-        center: currentFeature.geometry.coordinates,
-        zoom: 15
-      });
-  }
+// Attempt to read in file
+var stores = $.ajax({
+          url:"https://gist.githubusercontent.com/piarasj/24693cafee0dc4fb81dfb8a6eff4d5b7/raw/7c0fa47d66a8acf867a600245f217caa5a326794/JesuitSpiritualityCentres.geojson",
+          dataType: "json",
+          success: console.log("County data successfully loaded."),
+          error: function (xhr) {
+            alert(xhr.statusText)
+          }
+        })
+;
+
+
+
+// d3.json("SpiritualityCentres.geojson", function(data) {
+//    console.log(data);
+//})
+//;
+
+// End attempt
+
+
+map.on("load",function(e){map.addSource("places",{type:"geojson",data:stores}),buildLocationList(stores)}),stores.features.forEach(function(a,o){var e=document.createElement("div");e.id="marker-"+o,e.className="marker",new mapboxgl.Marker(e,{offset:[0,-23]}).setLngLat(a.geometry.coordinates).addTo(map),e.addEventListener("click",function(e){flyToStore(a),createPopUp(a);var t=document.getElementsByClassName("active");e.stopPropagation(),t[0]&&t[0].classList.remove("active"),document.getElementById("listing-"+o).classList.add("active")})});
+function flyToStore(o){map.flyTo({center:o.geometry.coordinates,zoom:13})}
 
   function createPopUp(currentFeature) {
     var popUps = document.getElementsByClassName('mapboxgl-popup');
@@ -840,8 +835,9 @@
 
     var popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(currentFeature.geometry.coordinates)
-          .setHTML('<h3>Sweetgreen</h3>' +
-            '<h4>' + currentFeature.properties.address + '</h4>')
+//Popup elements
+          .setHTML('<h3>' + currentFeature.properties.Centre + '</h3>' +
+            '<h4>' + currentFeature.properties.Address + '</h4>')
           .addTo(map);
   }
 
@@ -855,14 +851,14 @@
       var listing = listings.appendChild(document.createElement('div'));
       listing.className = 'item';
       listing.id = "listing-" + i;
-
       var link = listing.appendChild(document.createElement('a'));
       link.href = '#';
       link.className = 'title';
       link.dataPosition = i;
-      link.innerHTML = prop.address;
+      link.innerHTML = prop.Centre;
 
       var details = listing.appendChild(document.createElement('div'));
+<<<<<<< HEAD
       details.innerHTML = prop.city;
       if (prop.phone) {
       details.innerHTML = '<div class= "country">' +  prop.Country + '</div>';
@@ -876,24 +872,18 @@
 
         // 1. Fly to the point
         flyToStore(clickedListing);
+=======
+// Country CSS and name
+      details.innerHTML = '<div class= "country">' +  prop.Country + '</div>';
+//      if (prop.Centre) {
+//        details.innerHTML += ' &middot; ' + prop.Address;
+//      }
+>>>>>>> eb4b6c637a9176791544cbfebdc5a64db85c62aa
 
-        // 2. Close all other popups and display popup for clicked store
-        createPopUp(clickedListing);
 
-        // 3. Highlight listing in sidebar (and remove highlight for all other listings)
-        var activeItem = document.getElementsByClassName('active');
-
-        if (activeItem[0]) {
-           activeItem[0].classList.remove('active');
-        }
-        this.parentNode.classList.add('active');
-
-      });
-    }
-  }
-
+link.addEventListener("click",function(e){var t=data.features[this.dataPosition];flyToStore(t),createPopUp(t);var a=document.getElementsByClassName("active");a[0]&&a[0].classList.remove("active"),this.parentNode.classList.add("active")});}}
+ 
 
     </script>
   </body>
 </html>
-
