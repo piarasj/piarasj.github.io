@@ -35,13 +35,12 @@ body {
   /*position: absolute;*/
   background: #484848;
   padding: 3px 3px 3px 12px;
-  /*+placement: 0px -1px;*/
-  position: relative;
-  left: 0px;
-  top: -1px;
   color: #FAF3F0;
   font-size: larger;
   font-variant: small-caps;
+  height: ;
+  /*width: 400px;*/
+  height: 26px;
 }
 
 .map {
