@@ -44,6 +44,12 @@ body {
   border-bottom-right-radius: 8px;
 }
 
+.linkCentre a {
+  font-size: smaller;
+  color: #C25D3A;
+  text-align: right;
+}
+
 .map {
   position: absolute;
   width: 80%;
