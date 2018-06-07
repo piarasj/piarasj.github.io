@@ -32,21 +32,22 @@ body {
 }
 
 #menu {
-  /*position: absolute;*/
-  background: #484848;
-  padding: 3px 3px 3px 12px;
+  position: absolute;
+  background: rgba(97, 73, 73, 0.556);
+  padding: 1px 6px;
   color: #FAF3F0;
-  font-size: larger;
+  font-size: medium;
   font-variant: small-caps;
-  height: ;
+  /*height: 5%;*/
   /*width: 400px;*/
   height: 26px;
+  border-bottom-right-radius: 8px;
 }
 
 .map {
   position: absolute;
-  /*left: 0%;*/
   width: 80%;
+  /*height: 95%;*/
   top: 0;
   bottom: 0;
 }
