@@ -55,6 +55,25 @@
     "marker-size":""
     }
   },
+    {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8633172,50.421206 ]
+    },
+    "properties": {
+    "Centre":"La Pairelle",
+    "Province":"EOF",
+    "Country":"Belgium",
+    "Web":"www.lapairelle.be",
+    "Phone":"",
+    "Address":"5100 Wepion",
+    "marker-color":"#FF0000",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  
   {
     "type": "Feature",
     "geometry": {
@@ -104,24 +123,6 @@
     "Web":"jesuitesenprovence.com",
     "Phone":"",
     "Address":"13000 Marseille et le Sud-Est de la France",
-    "marker-color":"#FF0000",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 4.8633172,50.421206 ]
-    },
-    "properties": {
-    "Centre":"La Pairelle",
-    "Province":"EOF",
-    "Country":"France",
-    "Web":"www.lapairelle.be",
-    "Phone":"",
-    "Address":"5100 Wepion (près de Namur - Belgique)",
     "marker-color":"#FF0000",
     "marker-symbol":"",
     "marker-size":""
