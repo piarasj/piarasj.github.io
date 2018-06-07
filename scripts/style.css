@@ -31,6 +31,19 @@ body {
   padding: 20px;
 }
 
+#menu {
+  /*position: absolute;*/
+  background: #484848;
+  padding: 3px 3px 3px 12px;
+  /*+placement: 0px -1px;*/
+  position: relative;
+  left: 0px;
+  top: -1px;
+  color: #FAF3F0;
+  font-size: larger;
+  font-variant: small-caps;
+}
+
 .map {
   position: absolute;
   /*left: 0%;*/
@@ -208,7 +221,7 @@ canvas.mapboxgl-canvas {
 }
 
 .country {
-    direction: ltr;
+  direction: ltr;
   font-style: oblique;
   /*text-align: left;*/
   /*+border-radius: 5px;*/
@@ -229,16 +242,9 @@ canvas.mapboxgl-canvas {
 }
 
 .flag {
-    direction: ltr;
+  direction: ltr;
   height: 18px;
   width: 18px;
   float: right;
   padding-left: 5px;
 }
-
- #menu {
-        position: absolute;
-        background: #fff;
-        padding: 10px;
-        font-family: 'Open Sans', sans-serif;
-    }
