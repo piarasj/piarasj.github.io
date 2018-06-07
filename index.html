@@ -871,14 +871,15 @@ function flyToStore(o){map.flyTo({center:o.geometry.coordinates,zoom:13})}
 
   function createPopUp(currentFeature) {
     var popUps = document.getElementsByClassName('mapboxgl-popup');
+    var prop = currentFeature.properties;
+
+    var lowCountry = prop.Country.toLowerCase(); 
     if (popUps[0]) popUps[0].remove();
-
-
     var popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(currentFeature.geometry.coordinates)
 //Popup elements
           .setHTML('<h3>' + currentFeature.properties.Centre + '</h3>' +
-            '<h4>' + currentFeature.properties.Address + '</h4><div class= "linkCentre"><a target = "blank" href = "http://'+ currentFeature.properties.Web +'">'+ currentFeature.properties.Web +'</a></div>'
+            '<h4>' + currentFeature.properties.Address + '</h4><div class= "popFlag"><img src ="scripts/svg/'+ lowCountry +'.svg"</div><div class= "linkCentre"><a target = "blank" href = "http://'+ currentFeature.properties.Web +'">'+ currentFeature.properties.Web +'</a></div>'
             )
           .addTo(map);
   }
