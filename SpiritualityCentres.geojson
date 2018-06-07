@@ -542,7 +542,7 @@
         "Web": "",
         "Phone": "",
         "Address": "Triq Santa Dminka, Victoria VCT 9037, Gozo, Malta",
-        "marker-color": "#000080",
+        "marker-color": "#808080",
         "marker-symbol": "circle-stroked",
         "marker-size": "small"
       }
@@ -563,7 +563,7 @@
         "Web": "",
         "Phone": "",
         "Address": "Triq il-Missjunarji Maltin, Il-Mosta MST 9072, Malta",
-        "marker-color": "#000080",
+        "marker-color": "#808080",
         "marker-symbol": "religious-christian",
         "marker-size": ""
       }
@@ -900,6 +900,27 @@
         "Phone": "0044 1745 583444",
         "Address": "Tremeirchion, Saint Asaph LL17 0AS, UK",
         "marker-color": "#FF00FF",
+        "marker-symbol": "",
+        "marker-size": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.7173584,
+          36.922498
+        ]
+      },
+      "properties": {
+        "Centre": "Casa Sacro Cuore",
+        "Province": "EUM",
+        "Country": "Italy",
+        "Web": "http://www.gesuitiragusa.it/",
+        "Phone": "",
+        "Address": "Via del Sacro Cuore 46, 97100 , Ragusa",
+        "marker-color": "#808080",
         "marker-symbol": "",
         "marker-size": ""
       }
