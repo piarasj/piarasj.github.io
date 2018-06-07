@@ -235,3 +235,10 @@ canvas.mapboxgl-canvas {
   float: right;
   padding-left: 5px;
 }
+
+ #menu {
+        position: absolute;
+        background: #fff;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }
