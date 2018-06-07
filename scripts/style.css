@@ -31,21 +31,6 @@ body {
   padding: 20px;
 }
 
-.country {
-  font-style: oblique;
-  padding-right: 6px;
-  text-align: right;
-  /*+border-radius: 5px;*/
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  font-weight: bold;
-  background-color: rgba(210, 85, 46, 0.077);
-  color: #D3552E;
-  margin-left: 120px;
-}
-
 .map {
   position: absolute;
   /*left: 0%;*/
@@ -102,6 +87,8 @@ a:hover {
   display: block;
   color: #C35D3B;
   font-weight: 700;
+  float: left;
+  clear: both;
 }
 
 .listings .item .title small {
@@ -217,4 +204,28 @@ canvas.mapboxgl-canvas {
 
 .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
   border-bottom-color: #D3552E;
+}
+
+.country {
+  font-style: oblique;
+  padding-right: 6px;
+  /*text-align: left;*/
+  /*+border-radius: 5px;*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(210, 85, 46, 0.077);
+  color: #D3552E;
+  /*margin-left: 120px;*/
+  /*float: right;*/
+}
+
+.flag {
+  height: 18px;
+  width: 18px;
+  float: left;
+  width: 8%;
+  /*clear: none;*/
 }

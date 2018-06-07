@@ -2,24 +2,27 @@
 <html>
   <head>
       <meta charset='utf-8' />
-      <title>Store Locator</title>
+      <title>Jesuit Spirituality Centres</title>
       <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
       <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
       <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
       <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
 <link rel="stylesheet" type="text/css" href="scripts/style.css"/>
 
-
-  </head>
+   </head>
 
   <body>
-    <div class='sidebar'>
-      <div class='heading'>
-        <h1>Our locations</h1>
-      </div>
-    <div id='listings' class='listings'></div>
+    
+<div id='map' class='map'>
+</div>
+
+<div class='sidebar'>
+    <div class='heading'>
+    	<h1>Jesuit Spirituality Centres</h1>
     </div>
-    <div id='map' class='map'> </div>
+    <div id='listings' class='listings'>
+    </div>
+</div>
 
   <script>
   // This will let you use the .remove() function later on
@@ -40,13 +43,17 @@
     // style URL
     style: 'mapbox://styles/mapbox/light-v9',
     // initial position in [long, lat] format
-    center: [-77.034084142948, 38.909671288923],
+ center: [8.566015, 47.175605],
     // initial zoom
-    zoom: 13,
-    scrollZoom: false
+    zoom: 4,
+    scrollZoom: true
   });
+  
+map.addControl(new mapboxgl.NavigationControl());
 
-  var stores = 
+  var stores 
+  
+  
   
   
   
@@ -779,8 +786,19 @@
 }
   
   
-;
-  // This adds the data to the map
+  
+  
+  
+  
+  
+  
+  
+  
+  ;
+
+
+    
+// This adds the data to the map
   map.on('load', function (e) {
     // This is where your '.addLayer()' used to be, instead add only the source without styling a layer
     map.addSource("places", {
@@ -829,7 +847,7 @@
   function flyToStore(currentFeature) {
     map.flyTo({
         center: currentFeature.geometry.coordinates,
-        zoom: 15
+        zoom: 13
       });
   }
 
@@ -840,8 +858,8 @@
 
     var popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(currentFeature.geometry.coordinates)
-          .setHTML('<h3>Sweetgreen</h3>' +
-            '<h4>' + currentFeature.properties.address + '</h4>')
+          .setHTML('<h3>' + currentFeature.properties.Centre + '</h3>' +
+            '<h4>' + currentFeature.properties.Address + '</h4>')
           .addTo(map);
   }
 
@@ -860,13 +878,13 @@
       link.href = '#';
       link.className = 'title';
       link.dataPosition = i;
-      link.innerHTML = prop.address;
+      link.innerHTML = prop.Centre;
 
       var details = listing.appendChild(document.createElement('div'));
-      details.innerHTML = prop.city;
-      if (prop.phone) {
       details.innerHTML = '<div class= "country">' +  prop.Country + '</div>';
-      }
+//      if (prop.Centre) {
+//        details.innerHTML += ' &middot; ' + prop.Address;
+//      }
 
 
 
@@ -891,7 +909,8 @@
       });
     }
   }
-
+  
+ 
 
     </script>
   </body>
