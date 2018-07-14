@@ -55,39 +55,56 @@
     "marker-size":""
     }
   },
-    {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 4.8633172,50.421206 ]
-    },
-    "properties": {
-    "Centre":"La Pairelle",
-    "Province":"EOF",
-    "Country":"Belgium",
-    "Web":"www.lapairelle.be",
-    "Phone":"",
-    "Address":"5100 Wepion",
-    "marker-color":"#FF0000",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  
   {
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 3.663736,51.049832 ]
+       "coordinates":  [ -4.2644458,55.8668466 ]
     },
     "properties": {
-    "Centre":"Oude Abdij Drongen",
-    "Province":"ELC",
-    "Country":"Belgium",
-    "Web":"www.oudeabdij.be",
-    "Phone":"+32 9 226 52 26",
-    "Address":"Oude Abdij Drongen",
-    "marker-color":"#000080",
+    "Centre":"Ignatian Spirituality Centre Glasgow",
+    "Province":"BRI",
+    "Country":"UK",
+    "Web":"www.iscglasgow.co.uk",
+    "Phone":"0141-354 0077",
+    "Address":"35 Scott Street GLASGOW G3 6PE",
+    "marker-color":"#FF00FF",
+    "marker-symbol":"",
+    "marker-size":"small"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.1490017,51.5098299 ]
+    },
+    "properties": {
+    "Centre":"Mount Street Centre",
+    "Province":"BRI",
+    "Country":"UK",
+    "Web":"www.pathwaystogod.org/org/mount-street-jesuit-centre",
+    "Phone":" +44 (0)20-7499 0285",
+    "Address":"114 Mount Street, LONDON W1K 3AH",
+    "marker-color":"#FF00FF",
+    "marker-symbol":"",
+    "marker-size":"small"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.3801855,53.2573171 ]
+    },
+    "properties": {
+    "Centre":"St Beuno’s",
+    "Province":"BRI",
+    "Country":"UK",
+    "Web":"www.pathwaystogod.org/org/st-beunos",
+    "Phone":"0044 1745 583444",
+    "Address":"Tremeirchion, Saint Asaph LL17 0AS, UK",
+    "marker-color":"#FF00FF",
     "marker-symbol":"",
     "marker-size":""
     }
@@ -114,6 +131,42 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
+       "coordinates":  [ 12.4605074,41.9013525 ]
+    },
+    "properties": {
+    "Centre":"Curia",
+    "Province":"DIR",
+    "Country":"Italy",
+    "Web":"sjweb.info",
+    "Phone":"",
+    "Address":"Curia Generalizia, Borgo Santo Spirito 4, 00193, Rome",
+    "marker-color":"#008080",
+    "marker-symbol":"circle",
+    "marker-size":"small"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.663736,51.049832 ]
+    },
+    "properties": {
+    "Centre":"Oude Abdij Drongen",
+    "Province":"ELC",
+    "Country":"Belgium",
+    "Web":"www.oudeabdij.be",
+    "Phone":"+32 9 226 52 26",
+    "Address":"Oude Abdij Drongen",
+    "marker-color":"#000080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
        "coordinates":  [ 5.3988067,43.2968723 ]
     },
     "properties": {
@@ -123,6 +176,24 @@
     "Web":"jesuitesenprovence.com",
     "Phone":"",
     "Address":"13000 Marseille et le Sud-Est de la France",
+    "marker-color":"#FF0000",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.8633172,50.421206 ]
+    },
+    "properties": {
+    "Centre":"La Pairelle",
+    "Province":"EOF",
+    "Country":"France",
+    "Web":"www.lapairelle.be",
+    "Phone":"",
+    "Address":"5100 Wepion (près de Namur - Belgique)",
     "marker-color":"#FF0000",
     "marker-symbol":"",
     "marker-size":""
@@ -196,6 +267,204 @@
     "Phone":"",
     "Address":"56610 Arradon (près de Vannes, au bord du Golf du Morbihan)",
     "marker-color":"#FF0000",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.6559544,40.9646113 ]
+    },
+    "properties": {
+    "Centre":"Centro de Espiritualidad San Ignacio",
+    "Province":"ESP",
+    "Country":"Spain",
+    "Web":"www.cessalamanca.es",
+    "Phone":"923 125 000",
+    "Address":"Paseo San Antonio, 14-40, 37003 Salamanca, España",
+    "marker-color":"#008080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.6809452,40.5506654 ]
+    },
+    "properties": {
+    "Centre":"Comillas",
+    "Province":"ESP",
+    "Country":"Spain",
+    "Web":"www.comillas.edu",
+    "Phone":"",
+    "Address":"Universidad Comillas, 3 – 28049 Madrid",
+    "marker-color":"#008080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.831179,41.7215574 ]
+    },
+    "properties": {
+    "Centre":"Cova St Ignasi",
+    "Province":"ESP",
+    "Country":"Spain",
+    "Web":"www.covamanresa.cat/",
+    "Phone":"",
+    "Address":"Cova de Sant Ignasi Camí de la Cova 17, 08241 Manresa (Barcelona)",
+    "marker-color":"#008080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.2823535,43.1731364 ]
+    },
+    "properties": {
+    "Centre":"Loiola (Gipuzkoa)",
+    "Province":"ESP",
+    "Country":"Spain",
+    "Web":"www.santuariodeloyola.org/es/",
+    "Phone":"",
+    "Address":"Loiola Auzoa, 15 – 20730 Azpeitia (Gipuzkoa)",
+    "marker-color":"#008080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.2146105,42.5942381 ]
+    },
+    "properties": {
+    "Centre":"Santuario San Francisco Javier",
+    "Province":"ESP",
+    "Country":"Spain",
+    "Web":"www.santuariojaviersj.org/",
+    "Phone":"",
+    "Address":"Plaza San Francisco Javier, 4, 31411 JAVIER, Navarra",
+    "marker-color":"#008080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.7173584,36.922498 ]
+    },
+    "properties": {
+    "Centre":"Casa Sacro Cuore",
+    "Province":"EUM",
+    "Country":"Italy",
+    "Web":"www.gesuitiragusa.it/",
+    "Phone":"",
+    "Address":"Via del Sacro Cuore 46, 97100 , Ragusa",
+    "marker-color":"#808080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.243795,36.042623 ]
+    },
+    "properties": {
+    "Centre":"Dar Manresa",
+    "Province":"EUM",
+    "Country":"Malta",
+    "Web":"www.mtsjoseph.org/SectionLanding.aspx?id=221424",
+    "Phone":"",
+    "Address":"Triq Santa Dminka, Victoria VCT 9037, Gozo, Malta",
+    "marker-color":"#808080",
+    "marker-symbol":"circle-stroked",
+    "marker-size":"small"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.4144274,35.9142704 ]
+    },
+    "properties": {
+    "Centre":"Mount Saint Joseph Retreat House",
+    "Province":"EUM",
+    "Country":"Malta",
+    "Web":"www.mtsjoseph.org",
+    "Phone":"",
+    "Address":"Triq il-Missjunarji Maltin, Il-Mosta MST 9072, Malta",
+    "marker-color":"#808080",
+    "marker-symbol":"religious-christian",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.315613,39.213468 ]
+    },
+    "properties": {
+    "Centre":"Pozzo di Sichar",
+    "Province":"EUM",
+    "Country":"Italy",
+    "Web":"www.pozzodisichar.it/",
+    "Phone":"070.8940660",
+    "Address":"Via dei Ginepri 19, 09045 , Capitana (CA)",
+    "marker-color":"#808080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.5913486,38.0194884 ]
+    },
+    "properties": {
+    "Centre":"Villa La Nuza",
+    "Province":"EUM",
+    "Country":"Italy",
+    "Web":"www.esercizi-altavilla.it/it/",
+    "Phone":"328.408.8060",
+    "Address":"Via Piano Torre Marroia Contrada Sperone - 90010 , Altavilla Milicia (Pa)",
+    "marker-color":"#808080",
+    "marker-symbol":"",
+    "marker-size":""
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.2995842,44.4798243 ]
+    },
+    "properties": {
+    "Centre":"Villa San Giuseppe",
+    "Province":"EUM",
+    "Country":"Italy",
+    "Web":"www.villasangiuseppe.org/",
+    "Phone":"051.6142341",
+    "Address":"Via di San Luca 24, 40135 , Bologna",
+    "marker-color":"#808080",
     "marker-symbol":"",
     "marker-size":""
     }
@@ -312,16 +581,16 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 18.5273051,54.5162366 ]
+       "coordinates":  [ 8.566015,47.175605 ]
     },
     "properties": {
-    "Centre":"Ignacjańskie Centrum Formacji Duchowej",
-    "Province":"BOH",
-    "Country":"Hungary",
-    "Web":"www.icfd.pl",
-    "Phone":"",
-    "Address":"ul. Tatrzańska 35, 81-313 Gdynia",
-    "marker-color":"#0000FF",
+    "Centre":"Lassalle-Haus",
+    "Province":"HEL",
+    "Country":"Switzerland",
+    "Web":"www.lassalle-haus.org",
+    "Phone":" +41 41 757 14 14",
+    "Address":"Bad Schönbrunn, CH-6313 Edlibach",
+    "marker-color":"#000080",
     "marker-symbol":"",
     "marker-size":""
     }
@@ -330,16 +599,16 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 18.890361,47.71923 ]
+       "coordinates":  [ 7.131745,46.7965317 ]
     },
     "properties": {
-    "Centre":"Manréza",
-    "Province":"BOH",
-    "Country":"Hungary",
-    "Web":"manreza.hu/",
-    "Phone":"",
-    "Address":"Pilisszentkereszt-Dobogókő, Téry Ödön u. 6, 2099 Hungary",
-    "marker-color":"#0000FF",
+    "Centre":"Notre dame de la route",
+    "Province":"HEL",
+    "Country":"Switzerland",
+    "Web":"www.domaine-ndr.ch",
+    "Phone":" +41 26 409 75 00",
+    "Address":"Notre dame de la route, Ch. des Eaux-Vives 17, 1752 Villars-sur-Glâne",
+    "marker-color":"#000080",
     "marker-symbol":"",
     "marker-size":""
     }
@@ -384,88 +653,16 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 14.7173584,36.922498 ]
+       "coordinates":  [ 18.890361,47.71923 ]
     },
     "properties": {
-    "Centre":"Casa Sacro Cuore",
-    "Province":"EUM",
-    "Country":"Italy",
-    "Web":"www.gesuitiragusa.it/",
+    "Centre":"Manréza",
+    "Province":"HUN",
+    "Country":"Hungary",
+    "Web":"manreza.hu/",
     "Phone":"",
-    "Address":"Via del Sacro Cuore 46, 97100 , Ragusa",
-    "marker-color":"#808080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 12.4605074,41.9013525 ]
-    },
-    "properties": {
-    "Centre":"Curia",
-    "Province":"DIR",
-    "Country":"Italy",
-    "Web":"sjweb.info",
-    "Phone":"",
-    "Address":"Curia Generalizia, Borgo Santo Spirito 4, 00193, Rome",
-    "marker-color":"#008080",
-    "marker-symbol":"circle",
-    "marker-size":"small"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 9.315613,39.213468 ]
-    },
-    "properties": {
-    "Centre":"Pozzo di Sichar",
-    "Province":"EUM",
-    "Country":"Italy",
-    "Web":"www.pozzodisichar.it/",
-    "Phone":"070.8940660",
-    "Address":"Via dei Ginepri 19, 09045 , Capitana (CA)",
-    "marker-color":"#808080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 13.5913486,38.0194884 ]
-    },
-    "properties": {
-    "Centre":"Villa La Nuza",
-    "Province":"EUM",
-    "Country":"Italy",
-    "Web":"www.esercizi-altavilla.it/it/",
-    "Phone":"328.408.8060",
-    "Address":"Via Piano Torre Marroia Contrada Sperone - 90010 , Altavilla Milicia (Pa)",
-    "marker-color":"#808080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 11.2995842,44.4798243 ]
-    },
-    "properties": {
-    "Centre":"Villa San Giuseppe",
-    "Province":"EUM",
-    "Country":"Italy",
-    "Web":"www.villasangiuseppe.org/",
-    "Phone":"051.6142341",
-    "Address":"Via di San Luca 24, 40135 , Bologna",
-    "marker-color":"#808080",
+    "Address":"Pilisszentkereszt-Dobogókő, Téry Ödön u. 6, 2099 Hungary",
+    "marker-color":"#0000FF",
     "marker-symbol":"",
     "marker-size":""
     }
@@ -492,35 +689,17 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 14.243795,36.042623 ]
+       "coordinates":  [ 18.5273051,54.5162366 ]
     },
     "properties": {
-    "Centre":"Dar Manresa",
-    "Province":"EUM",
-    "Country":"Malta",
-    "Web":"www.mtsjoseph.org/SectionLanding.aspx?id=221424",
+    "Centre":"Ignacjańskie Centrum Formacji Duchowej",
+    "Province":"PMA",
+    "Country":"North Poland",
+    "Web":"www.icfd.pl",
     "Phone":"",
-    "Address":"Triq Santa Dminka, Victoria VCT 9037, Gozo, Malta",
-    "marker-color":"#808080",
-    "marker-symbol":"circle-stroked",
-    "marker-size":"small"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 14.4144274,35.9142704 ]
-    },
-    "properties": {
-    "Centre":"Mount Saint Joseph Retreat House",
-    "Province":"EUM",
-    "Country":"Malta",
-    "Web":"www.mtsjoseph.org",
-    "Phone":"",
-    "Address":"Triq il-Missjunarji Maltin, Il-Mosta MST 9072, Malta",
-    "marker-color":"#808080",
-    "marker-symbol":"religious-christian",
+    "Address":"ul. Tatrzańska 35, 81-313 Gdynia",
+    "marker-color":"#0000FF",
+    "marker-symbol":"",
     "marker-size":""
     }
   },
@@ -609,186 +788,6 @@
     "Web":"pontosj.pt/casadesantoinacio/",
     "Phone":"21 928 9020",
     "Address":"Estrada do Rodízio, 124 – Praia Grande 2705-335 COLARES",
-    "marker-color":"#FF00FF",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -5.6559544,40.9646113 ]
-    },
-    "properties": {
-    "Centre":"Centro de Espiritualidad San Ignacio",
-    "Province":"ESP",
-    "Country":"Spain",
-    "Web":"www.cessalamanca.es",
-    "Phone":"923 125 000",
-    "Address":"Paseo San Antonio, 14-40, 37003 Salamanca, España",
-    "marker-color":"#008080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -3.6809452,40.5506654 ]
-    },
-    "properties": {
-    "Centre":"Comillas",
-    "Province":"ESP",
-    "Country":"Spain",
-    "Web":"www.comillas.edu",
-    "Phone":"",
-    "Address":"Universidad Comillas, 3 – 28049 Madrid",
-    "marker-color":"#008080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 1.831179,41.7215574 ]
-    },
-    "properties": {
-    "Centre":"Cova St Ignasi",
-    "Province":"ESP",
-    "Country":"Spain",
-    "Web":"www.covamanresa.cat/",
-    "Phone":"",
-    "Address":"Cova de Sant Ignasi Camí de la Cova 17, 08241 Manresa (Barcelona)",
-    "marker-color":"#008080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -2.2823535,43.1731364 ]
-    },
-    "properties": {
-    "Centre":"Loiola (Gipuzkoa)",
-    "Province":"ESP",
-    "Country":"Spain",
-    "Web":"www.santuariodeloyola.org/es/",
-    "Phone":"",
-    "Address":"Loiola Auzoa, 15 – 20730 Azpeitia (Gipuzkoa)",
-    "marker-color":"#008080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -1.2146105,42.5942381 ]
-    },
-    "properties": {
-    "Centre":"Santuario San Francisco Javier",
-    "Province":"ESP",
-    "Country":"Spain",
-    "Web":"www.santuariojaviersj.org/",
-    "Phone":"",
-    "Address":"Plaza San Francisco Javier, 4, 31411 JAVIER, Navarra",
-    "marker-color":"#008080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 8.566015,47.175605 ]
-    },
-    "properties": {
-    "Centre":"Lassalle-Haus",
-    "Province":"HEL",
-    "Country":"Switzerland",
-    "Web":"www.lassalle-haus.org",
-    "Phone":" +41 41 757 14 14",
-    "Address":"Bad Schönbrunn, CH-6313 Edlibach",
-    "marker-color":"#000080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ 7.131745,46.7965317 ]
-    },
-    "properties": {
-    "Centre":"Notre dame de la route",
-    "Province":"HEL",
-    "Country":"Switzerland",
-    "Web":"www.domaine-ndr.ch",
-    "Phone":" +41 26 409 75 00",
-    "Address":"Notre dame de la route, Ch. des Eaux-Vives 17, 1752 Villars-sur-Glâne",
-    "marker-color":"#000080",
-    "marker-symbol":"",
-    "marker-size":""
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -4.2644458,55.8668466 ]
-    },
-    "properties": {
-    "Centre":"Ignatian Spirituality Centre Glasgow",
-    "Province":"BRI",
-    "Country":"UK",
-    "Web":"www.iscglasgow.co.uk",
-    "Phone":"0141-354 0077",
-    "Address":"35 Scott Street GLASGOW G3 6PE",
-    "marker-color":"#FF00FF",
-    "marker-symbol":"",
-    "marker-size":"small"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -0.1490017,51.5098299 ]
-    },
-    "properties": {
-    "Centre":"Mount Street Centre",
-    "Province":"BRI",
-    "Country":"UK",
-    "Web":"www.pathwaystogod.org/org/mount-street-jesuit-centre",
-    "Phone":" +44 (0)20-7499 0285",
-    "Address":"114 Mount Street, LONDON W1K 3AH",
-    "marker-color":"#FF00FF",
-    "marker-symbol":"",
-    "marker-size":"small"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-       "type": "Point",
-       "coordinates":  [ -3.3801855,53.2573171 ]
-    },
-    "properties": {
-    "Centre":"St Beuno’s",
-    "Province":"BRI",
-    "Country":"UK",
-    "Web":"www.pathwaystogod.org/org/st-beunos",
-    "Phone":"0044 1745 583444",
-    "Address":"Tremeirchion, Saint Asaph LL17 0AS, UK",
     "marker-color":"#FF00FF",
     "marker-symbol":"",
     "marker-size":""
