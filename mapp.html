@@ -67,10 +67,7 @@ var layerList=document.getElementById("menu"),inputs=layerList.getElementsByTagN
  
 map.addControl(new mapboxgl.NavigationControl());
 
-  var stores = 
- // Paste below until file has geojson has url
-
-map.addSource('some id', {
+  var stores = map.addSource('stores', {
   type: 'geojson',
   data: 'https://piarasj.github.centresMap.geojson'
 });
