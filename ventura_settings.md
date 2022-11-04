@@ -2,8 +2,9 @@
 
 *To access the settings from Shortcuts, Keyboard Maestro or Alfred...*
 
+
 Setting             |                   |                                                                                
-------------------- | ----------------- | -------------------------------------------------------------------------------
+--;|--|--
 Apple ID            |                   | x-apple.systempreferences:com.apple.systempreferences.AppleIDSettings          
 Family              |                   | x-apple.systempreferences:com.apple.Family-Settings.extension                  
 Wi-Fi               |                   | x-apple.systempreferences:com.apple.wifi-settings-extension                    
