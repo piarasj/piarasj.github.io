@@ -45,6 +45,7 @@ Setting             |  Sub-section                 |RL
 | Siri & Spotlight |   | x-apple.systempreferences:com.apple.Siri-Settings.extension |
 | Privacy & Security |   | x-apple.systempreferences:com.apple.preference.security |
 |   | Location Services   | x-apple.systempreferences:com.apple.preference.security?Privacy_SystemServices |
+|   | Bluetooth   | x-apple.systempreferences:com.apple.preference.security?Privacy_Bluetooth |
 |   | Contacts    | x-apple.systempreferences:com.apple.preference.security?Privacy_Contacts |
 |   | Calendars   | x-apple.systempreferences:com.apple.preference.security?Privacy_Calendars |
 |   | Reminders   | x-apple.systempreferences:com.apple.preference.security?Privacy_RemindersPrivacy |
